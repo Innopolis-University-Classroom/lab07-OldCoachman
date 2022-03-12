@@ -1,4 +1,4 @@
-template <class Calculator> {
+template <class Calculator> Calculator {
     template<typename T>
 private:
     T num1, num2;
