@@ -1,7 +1,7 @@
-template <class Calculator> Calculator {
-    template<typename T>
+template<class T>
+class Calculator {
 private:
-    T num1, num2;
+    T num1{}, num2{};
 
 public:
     Calculator(T n1, T n2) {
@@ -9,20 +9,20 @@ public:
         num2 = n2;
     }
 
-    T addition<T>(n1, n2) {
-        return n1+n2;
+    T add() {
+        return num1+num2;
     }
 
-    T subtraction<T>(n1, n2) {
-        return n1-n2;
+    T subtract() {
+        return num1-num2;
     }
 
-    T multiplication<T>(n1, n2) {
-        return n1*n2;
+    T multiply() {
+        return num1*num2;
     }
 
-    T division<T>(n1, n2) {
-        return n1/n2;
+    T divide() {
+        return num1/num2;
     }
 };
 
